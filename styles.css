@@ -28,7 +28,6 @@ html, body {
     line-height: 20px;
 
     cursor: pointer;
-
 }
 
 .first-screen {
@@ -500,7 +499,6 @@ input[type="range"] {
     font-weight: 600;
     font-size: 36px;
     line-height: 44px;
-
 }
 
 .fourth-screen .about-shop .section-1 p {
@@ -573,6 +571,83 @@ input[type="range"] {
 
 
 /*------------------Fifth Screen----------------------------*/
-.fourth-screen {
-    background-image: url("");
+.fifth-screen {
+    background-image: url("./assets/fifth\ screen\ background.svg");
+    height: 1042px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+
+.fifth-screen .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+
+    text-align: center;
+}
+
+.fifth-screen .content h1 {
+    padding-bottom: 75px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+}
+
+.fifth-screen .content .pross-list {
+    display: flex;
+}
+
+.fifth-screen .content .pross-list .pross-item {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    width: 206px;
+    text-align: center;
+}
+
+.fifth-screen .content .separator {
+    margin-top: 50px;
+}
+
+.fifth-screen .content .pross-item img {
+    width: 130px;
+    height: 130px;
+
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.fifth-screen .content .pross-item h3 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 165.5%;
+    color: #1E1E1E;
+}
+
+
+.fifth-screen .content .pross-item p {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 155%;
+
+    color: #1E1E1E;
+    opacity: 0.4;
+}
+
+.fifth-screen .content button {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
 }
