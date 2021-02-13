@@ -652,6 +652,8 @@ input[type="range"] {
     margin-top: 60px;
 }
 
+
+/*------------------Map Screen----------------------------*/
 .map {
     z-index: 0;
 }
@@ -736,3 +738,126 @@ input[type="range"] {
 .map .question-form button {
     margin-top: 56px;
 }
+
+.map .question-form .input-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.map .question-form .input-wrap :nth-child(1) {
+    margin-top: 20px;
+}
+
+
+footer {
+    background: #121212;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 100%;
+    height: 431px;
+    padding: 35px;
+}
+
+footer .top {
+    display: flex;
+}
+
+footer .content {
+    display: flex;
+    flex-direction: column;
+    padding-left: 250px;
+    padding-right: 250px;
+}
+
+footer .top .logo {
+    width: 60%;
+}
+
+footer .top .business-data .phone {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 27px;
+    color: #FFFFFF;
+}
+
+footer .top .business-data .register-data h3 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+
+    color: #FFFFFF;
+}
+
+
+footer .top .business-data .register-data p {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    color: #FFFFFF;
+}
+
+footer .top .social-networks {
+    margin-right: 50px;
+
+}
+
+footer .top .social-networks img {
+    margin-left: 14px;
+}
+
+footer .bottom .adress-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 74px;
+}
+
+footer .bottom .adress-list .adress-item {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 221px;
+    height: 80px;
+}
+
+footer .bottom .adress-list .adress-item :nth-child(0){
+    margin-left: 0px;
+}
+
+footer .bottom .adress-list .adress-item {
+    margin-right: 72px;
+}
+footer .bottom .adress-list .adress-item img {
+    margin-right: 6px;
+}
+
+footer .bottom .adress-list .adress-item .main h6 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 150%;
+    color: #FFFFFF;
+
+
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+footer .bottom .adress-list .adress-item p {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 150%;
+    color: #AFAFAF;
+}
+
