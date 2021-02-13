@@ -98,24 +98,9 @@ main .key-phrase .small-part {
     margin-bottom: 73px;
 }
 
-main .key-img {
-    position: absolute;
-    width: 100%;
-    height: 727px;
-}
-
-main .key-img .img-part-1 {
-    position: absolute;
-    left: 0px;
-    bottom: 0px;
-    z-index: 0;
-}
-
-main .key-img .img-part-2 {
-    position: absolute;
-    right: 0px;
-    top: 0px;
-    z-index: 0;
+main .key-content {
+    display: flex;
+    justify-content: space-between;
 }
 
 
