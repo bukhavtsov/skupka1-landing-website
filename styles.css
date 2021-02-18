@@ -31,15 +31,20 @@ html, body {
 }
 
 .first-screen {
-    background-image: url("./assets/First screen background.svg");
     font-family: Montserrat;
     font-style: normal;
     font-weight: 600;
-    font-size: 0.8vw;
+    font-size: 16px;
     line-height: 20px;
     color: #ffffff;
     z-index: -2;
     height: 1042px;
+
+    background: url("./assets/Group\ 117.jpg") no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
 
 /*------------------first Screen----------------------------*/
@@ -53,7 +58,6 @@ header {
 }
 
 header .logo {
-    margin-left: 250px;
     margin-left: 13%;
     margin-right: 404px;
 }
@@ -64,13 +68,11 @@ header .phone-order {
 
 header .phone-order .number {
     font-weight: bold;
-    font-size: 1vw;
     line-height: 27px;
 }
 
 header .phone-order .order {
     font-weight: 500;
-    font-size: 16px;
     line-height: 20px;
     text-align: right;
     
@@ -85,6 +87,7 @@ main .key-phrase {
     width: 440px;
     z-index: 1;
 }
+
 main .key-phrase .bold-part {
     font-weight: bold;
     font-size: 44px;
@@ -102,6 +105,7 @@ main .key-phrase .small-part {
 main .key-content {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 
@@ -113,7 +117,9 @@ main .pross-list {
 }
 
 main .pross-list .pross-item {
-    background-image: url("./assets/pross rectangle.svg");
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(12px);
+    border-radius: 16px;
     align-items: center;
     margin-left: 20px;
     text-align: left;
@@ -880,6 +886,87 @@ footer .bottom .adress-list .adress-item p {
     footer .bottom .adress-list {
         padding-top: 0px;
     }
+}
 
+@media screen and (max-width: 1439px) {
+    header {
+        justify-content: space-around;
+        font-size: 12px;
+    }
+    header .logo {
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    main .pross-list .pross-item {
+        height: 220px;
+    }
+
+    header .phone-order{
+        margin-right: 0px;
+    }
+
+    main .key-phrase .bold-part {
+        font-size: 28px;
+    }
+
+    main .key-phrase .small-part {
+        font-size: 14px;
+    }
+    
+    .first-screen .key-content .img-part-2 {
+        width: 403px; /* width of container */
+        height: 338px; /* height of container */
+        object-fit: cover;
+        object-position: 0 100%; /* try 20px 10px */ 
+    }
+
+    .second-screen .product-list .product-item {
+        width: 163px;
+        height: 222px;           
+    }
+    .second-screen .product-list .product-item .product-item-wrap .img-wrap {
+        height: 104px;
+        margin-bottom: 20px;
+    }
+
+    .second-screen .product-list .product-item .product-item-wrap div {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    header {
+        font-size: 10px
+    }
+    .first-screen .key-content .img-part-2 {
+        display: none;
+    }
+
+    main .key-phrase {
+        padding-top: 20px;
+    }
+    main .key-content {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main .key-content .evalute-btn {
+        display: grid;
+        justify-content: center;
+    }
+
+    main .pross-list {
+        margin-top: 40px;
+        flex-wrap: wrap;
+        gap: 10px
+    }
+    
+    
+    main .pross-list .pross-item {
+        height: 250px;
+        width: 150px;
+    }
     
 }
