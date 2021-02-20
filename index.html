@@ -4,8 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Skupka</title>
+    <title>Скупка №1 - Скупка-Продажа Б/У. Техники</title>
+    <meta name="description" content="+375 29 180 11 22 Скупка №1. ВО ВСЕХ РАЙОНАХ города, покупаем только ДОРОГО">
+    <meta name="keywords" content="Скупка, Срочный Выкуп, Скупка №1, Б/У" />
     <link rel="stylesheet" href="./styles.css">
+    <link rel="shortcut icon" href="./assets/LOGO.svg" type="image/svg">
 </head>
 
 <body>
@@ -28,9 +31,16 @@
                     </div>
                 </div>
                 <div class="social-networks">
-                    <img src="./assets/Social network instagram.svg" alt="Social network instagram">
-                    <img src="./assets/Social network vk.svg" alt="Social network vk">
-                    <img src="./assets/Social network viber.svg" alt="Social network viber">
+                    <a href="https://www.instagram.com/skupka1mogilev/">
+                        <img src="./assets/Social network instagram.svg" alt="Social network instagram">
+                    </a>
+                    <a href="https://vk.com/skupkacentr">
+                        <img src="./assets/Social network vk.svg" alt="Social network vk">
+                    </a>
+                    <a
+                        href="https://invite.viber.com/?g2=AQBVTdyv%2FHAdK0v3fQp5rZ5dqgY88b40Ry8wbz2%2FPhPxCHoq2RqO%2B%2Fg8LoWKHtKs">
+                        <img src="./assets/Social network viber.svg" alt="Social network viber">
+                    </a>
                 </div>
                 <div class="phone-order">
                     <div class="number">+375 (29) 180-11-22</div>
@@ -39,7 +49,7 @@
                     </div>
                 </div>
             </div>
-            
+
         </header>
         <main>
             <div class="key-content">
@@ -53,7 +63,9 @@
                     </div>
                     <div class="evalute-btn">
                         <button class="yellow-btn">
-                            <img src="./assets/calculator.svg"> <span>оценить товар</span>
+                            <a href="#product-form-header">
+                                <img src="./assets/calculator.svg"> <span>оценить товар</span>
+                            </a>
                         </button>
                     </div>
                 </div>
@@ -235,11 +247,11 @@
     </div>
 
     <div class="third-screen">
-        <div class="yellow-header">
+        <div class="yellow-header" id="product-form-header">
             Пройдите тест за 30 секунд
             и узнайте стомость вашего товара
         </div>
-        <form id="regForm" action="https://formspree.io/f/mnqoywqp" method="POST">
+        <form id="product-form" action="https://formspree.io/f/mnqoywqp" method="POST">
             <div class="steps">
                 <div class="wrap">
                     <div class="step">
@@ -301,11 +313,13 @@
                         <div class="tab-form">
                             <div class="radio-joiner">
                                 <div class="radio-wrap">
-                                    <input type="radio" id="technique-choice-1" oninput="this.className = '' "name="complect" value="full-set">
+                                    <input type="radio" id="technique-choice-1" oninput="this.className = '' "
+                                        name="complect" value="full-set">
                                     <label for="technique-choice-1">полный комплект</label>
                                 </div>
                                 <div class="radio-wrap">
-                                    <input type="radio" id="technique-choice-2" name="complect" oninput="this.className = '' " value="incomplete set">
+                                    <input type="radio" id="technique-choice-2" name="complect"
+                                        oninput="this.className = '' " value="incomplete set">
                                     <label for="technique-choice-2">неполный комплект</label>
                                 </div>
                             </div>
@@ -356,7 +370,8 @@
                         <p>
                             Ваш телефон
                         </p>
-                        <p><input placeholder="+375 (**) ***-**-**" oninput="this.className = ''" name="customer-phone"></p>
+                        <p><input placeholder="+375 (**) ***-**-**" oninput="this.className = ''" name="customer-phone">
+                        </p>
                     </div>
 
                 </div>
@@ -379,7 +394,11 @@
                         свой
                         товар.
                     </p>
-                    <button class="call-order yellow-btn">Заказать звонок</button>
+                    <button class="call-order yellow-btn">
+                        <a href="#question-form">
+                            Заказать звонок
+                        </a>
+                    </button>
                 </div>
             </div>
             <div class="section-2">
@@ -461,13 +480,17 @@
                     </p>
                 </div>
             </div>
-            <button class="yellow-btn">Оставить заявку</button>
+            <button class="yellow-btn">
+                <a href="#question-form">
+                    Оставить заявку
+                </a>
+            </button>
         </div>
     </div>
 
     <div class="map">
         <div class="form-wrapper">
-            <form action="" class="question-form">
+            <form class="question-form" action="https://formspree.io/f/xqkgonlb" method="POST" id="question-form">
                 <h2>
                     Остались вопросы?
                 </h2>
@@ -483,7 +506,7 @@
                     <label for="phone">Ваш телефон</label>
                     <input type="text" name="phone" id="phone" placeholder="+375 (**) ***-**-**">
                 </div>
-                <button type="submit" class="yellow-btn">Перезвоните мне</button>
+                <button type="submit" value="Send" class="yellow-btn">Перезвоните мне</button>
             </form>
         </div>
         <div class="yandex-map">
@@ -503,9 +526,16 @@
                     <img src="./assets/black-and-white-logo.svg" alt="blck and white logo">
                 </div>
                 <div class="social-networks">
-                    <img src="./assets/Social network instagram.svg" alt="Social network instagram">
-                    <img src="./assets/Social network vk.svg" alt="Social network vk">
-                    <img src="./assets/Social network viber.svg" alt="Social network viber">
+                    <a href="https://www.instagram.com/skupka1mogilev/">
+                        <img src="./assets/Social network instagram.svg" alt="Social network instagram">
+                    </a>
+                    <a href="https://vk.com/skupkacentr">
+                        <img src="./assets/Social network vk.svg" alt="Social network vk">
+                    </a>
+                    <a
+                        href="https://invite.viber.com/?g2=AQBVTdyv%2FHAdK0v3fQp5rZ5dqgY88b40Ry8wbz2%2FPhPxCHoq2RqO%2B%2Fg8LoWKHtKs">
+                        <img src="./assets/Social network viber.svg" alt="Social network viber">
+                    </a>
                 </div>
                 <div class="business-data">
                     <div class="phone">
@@ -529,50 +559,50 @@
                     <div class="adress-item">
                         <img src="./assets/map-location-icon.svg" alt="map location">
                         <div class="main">
-                            <h6>ул. Бориса Царикова, 5а</h6>
-                            <p>р-он "Сельмаш", магазин "Копеечка" (вход через магазин)</p>
+                            <h6>ул. Мазурова, 60</h6>
+                            <p>р-он "Мельников Луг", магазин "Веста"</p>
                         </div>
                     </div>
                     <div class="adress-item">
                         <img src="./assets/map-location-icon.svg" alt="map location">
                         <div class="main">
-                            <h6>ул. Бориса Царикова, 5а</h6>
-                            <p>р-он "Сельмаш", магазин "Копеечка" (вход через магазин)</p>
+                            <h6>ул. Ильича, 59а</h6>
+                            <p>р-он "Белица", ТЦ "Полесье"</p>
                         </div>
                     </div>
                     <div class="adress-item">
                         <img src="./assets/map-location-icon.svg" alt="map location">
                         <div class="main">
-                            <h6>ул. Бориса Царикова, 5а</h6>
-                            <p>р-он "Сельмаш", магазин "Копеечка" (вход через магазин)</p>
+                            <h6>ул. пр-т Речицкий, 61</h6>
+                            <p>51 мкр-н, торговый дом "Речицкий", вход с улицы, около входа в ресторан.</p>
                         </div>
                     </div>
                     <div class="adress-item">
                         <img src="./assets/map-location-icon.svg" alt="map location">
                         <div class="main">
-                            <h6>ул. Бориса Царикова, 5а</h6>
-                            <p>р-он "Сельмаш", магазин "Копеечка" (вход через магазин)</p>
+                            <h6>ул. Карповича, 28, 2 этаж</h6>
+                            <p>центр города, центральный рынок, ТЦ "Виктория"</p>
                         </div>
                     </div>
                     <div class="adress-item">
                         <img src="./assets/map-location-icon.svg" alt="map location">
                         <div class="main">
-                            <h6>ул. Бориса Царикова, 5а</h6>
-                            <p>р-он "Сельмаш", магазин "Копеечка" (вход через магазин)</p>
+                            <h6>ул. Кожара, 1, 1 этаж</h6>
+                            <p>р-он "Аэродром", рядом с "Океаном"</p>
                         </div>
                     </div>
                     <div class="adress-item">
                         <img src="./assets/map-location-icon.svg" alt="map location">
                         <div class="main">
-                            <h6>ул. Бориса Царикова, 5а</h6>
-                            <p>р-он "Сельмаш", магазин "Копеечка" (вход через магазин)</p>
+                            <h6>ул. Свиридова, 13</h6>
+                            <p>р-он "Волотова", круглое здание "Таблетка"</p>
                         </div>
                     </div>
                     <div class="adress-item">
                         <img src="./assets/map-location-icon.svg" alt="map location">
                         <div class="main">
-                            <h6>ул. Бориса Царикова, 5а</h6>
-                            <p>р-он "Сельмаш", магазин "Копеечка" (вход через магазин)</p>
+                            <h6>ул. Ильича, 331</h6>
+                            <p>р-он "Белица", вход здание завода</p>
                         </div>
                     </div>
                 </div>
