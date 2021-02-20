@@ -760,7 +760,7 @@ footer {
     box-sizing: border-box;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     width: 100%;
-    height: 431px;
+    min-height: 431px;
     padding: 35px;
 }
 
@@ -786,6 +786,7 @@ footer .top .business-data .phone {
     font-size: 22px;
     line-height: 27px;
     color: #FFFFFF;
+    min-width: 210px;
 }
 
 footer .top .business-data .register-data h3 {
@@ -810,7 +811,7 @@ footer .top .business-data .register-data p {
 
 footer .top .social-networks {
     margin-right: 50px;
-
+    min-width: 150px;
 }
 
 footer .top .social-networks img {
@@ -1011,6 +1012,10 @@ footer .bottom .adress-list .adress-item p {
     .fifth-screen .content h1 {
         font-size: 28px;
     }
+
+    footer .top .logo {
+        width: 40%;
+    }
     
 }
 
@@ -1187,5 +1192,48 @@ footer .bottom .adress-list .adress-item p {
     .map .question-form h2 {
         font-size: 18px
     }
+
+    footer .content {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    footer .top .social-networks {
+        margin-right: 0;
+    }
+
+    footer .top .business-data .phone {
+        font-size: 14px;
+    }
+
+    footer .top .business-data .register-data h3 {
+        font-size: 10px;
+    }
+
+    footer .top .business-data .register-data p {
+        font-size: 10px;
+    }
+
+    footer .top .business-data .phone {
+        max-width: 50px;
+    }
 }
 
+@media screen and (max-width: 600px) {
+    footer .top {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    footer .bottom .adress-list {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer .bottom .adress-list .adress-item {
+        margin-right: 0px;
+    }
+
+}
