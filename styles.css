@@ -17,7 +17,6 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
-    justify-content: space-between;
     padding-right: 40px;
     padding-left: 40px;
 
@@ -77,6 +76,10 @@ header .phone-order .order {
     text-align: right;
     
     color: #E3F41A;
+}
+
+.first-screen .yellow-btn {
+    justify-content: space-between;
 }
 
 
@@ -468,7 +471,11 @@ input[type="range"] {
 
 /*------------------Fourth Screen----------------------------*/
 .fourth-screen {
-    background-image: url("./assets/forth\ screen\ background.svg");
+    background: url("./assets/forth\ screen\ background.svg") no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;;
     height: 1042px;
     width: 100%;
     display: flex;
@@ -481,15 +488,14 @@ input[type="range"] {
     display: flex;
     justify-content: center;
     width: 100%;
-    height: 613px;
+    flex-wrap: wrap
 }
 
 .fourth-screen .about-shop .section-1 {
     display: flex;
     align-items: center;
     flex-direction: column;
-    width: 40%;
-    height: 100%;
+    max-width: 1000px;
 }
 
 .fourth-screen .about-shop .section-1 h1 {
@@ -501,8 +507,7 @@ input[type="range"] {
 }
 
 .fourth-screen .about-shop .section-1 p {
-    width: 548px;
-    height: 120px;
+    max-width: 548px;
     font-family: Montserrat;
     font-style: normal;
     font-weight: 500;
@@ -516,14 +521,14 @@ input[type="range"] {
 }
 
 .fourth-screen .about-shop .section-2 {
-    width: 60%;
+    max-width: 1000px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
 .fourth-screen .about-shop .section-2 .experience-list {
-    width: 90%;
+    max-width: 1000px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -544,7 +549,7 @@ input[type="range"] {
     margin-left: 15px
 }
 .fourth-screen .about-shop .section-2 .experience-list .exp-item h3{
-    width: 312px;
+    max-width: 312px;
 
     font-family: Montserrat;
     font-style: normal;
@@ -556,7 +561,7 @@ input[type="range"] {
 
 
 .fourth-screen .about-shop .section-2 .experience-list .exp-item p {
-    width: 289px;
+    max-width: 289px;
 
     font-family: Montserrat;
     font-style: normal;
@@ -889,6 +894,16 @@ footer .bottom .adress-list .adress-item p {
     footer .bottom .adress-list {
         padding-top: 0px;
     }
+
+    .fourth-screen .about-shop .section-1 .call-order {
+        margin-top: 0px;
+    }
+
+    .fourth-screen .about-shop .wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 @media screen and (max-width: 1439px) {
@@ -1062,6 +1077,23 @@ footer .bottom .adress-list .adress-item p {
     main .pross-list .pross-item {
         height: 250px;
         width: 150px;
+    }
+
+    .fourth-screen .about-shop .section-2 .experience-list .exp-item {
+        width: 300px;
+        height: 200px;
+    }
+
+    .fourth-screen .about-shop .section-2 .experience-list .exp-item h3 {
+        margin-block-start: 0px;
+        margin-block-end: 0px;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+    }
+
+    .fourth-screen .about-shop .section-2 .experience-list .exp-item p {
+        margin-block-start: 0px;
+        margin-block-end: 0px;
     }
     
 }
