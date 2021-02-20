@@ -1070,6 +1070,7 @@ footer .bottom .adress-list .adress-item p {
     .second-screen .product-list .product-item .product-item-wrap .img-wrap {
         height: 50px;
         margin-bottom: 20px;
+        width: 80px;
     }
 
     .second-screen .product-list .product-item .product-item-wrap div {
@@ -1235,7 +1236,7 @@ footer .bottom .adress-list .adress-item p {
     footer .bottom .adress-list .adress-item {
         margin-right: 0px;
     }
-        
+
     .second-screen .product-list .product-item {
         margin-left: 0px;
         margin-top: 0px;
