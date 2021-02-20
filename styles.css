@@ -52,7 +52,7 @@ html, body {
 header {
     display: flex;
     justify-content: space-between;
-
+    flex-wrap: wrap;
     padding-top: 32px;
 }
 
@@ -61,16 +61,19 @@ header .logo {
     margin-right: 404px;
 }
 
-header .phone-order {
-    margin-right: 250px;
+header .wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 30px;
 }
 
-header .phone-order .number {
+header .wrapper .phone-order .number {
     font-weight: bold;
     line-height: 27px;
 }
 
-header .phone-order .order {
+header .wrapper .phone-order .order {
     font-weight: 500;
     line-height: 20px;
     text-align: right;
@@ -200,6 +203,7 @@ main .pross-list .pross-item .sub-text {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 20px;
 }
 
 
@@ -1241,8 +1245,8 @@ footer .bottom .adress-list .adress-item p {
         margin-left: 0px;
         margin-top: 0px;
 
-        width: 100px;
-        height: 100px
+        width: 110px;
+        height: 110px
     }
     
 
@@ -1251,23 +1255,19 @@ footer .bottom .adress-list .adress-item p {
         max-width: 90px;
     }
 
-    header .adress {
-        display: none;
-    }
-
     header .work-schedule  {
-        display: none;
-    }
-
-    header .social-networks{
-        display: none;
-    }
-
-    header .phone-order{
         display: none;
     }
 
     .map .question-form input {
         width: 280px;
+    }
+
+    header .wrapper {
+        gap: 5px;
+    }
+
+    main .key-phrase .small-part {
+        margin-bottom: 20px;
     }
 }

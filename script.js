@@ -13,6 +13,8 @@ function showTab(n) {
     document.getElementById("nextBtn").innerHTML = "Далее";
   } else {
     document.getElementById("nextBtn").innerHTML = "Далее";
+    const post = document.getElementById("nextBtn");
+    post[n].setAttribute('value', 'Send');
   }
   // ... and run a function that displays the correct step indicator:
   fixStepIndicator(n)

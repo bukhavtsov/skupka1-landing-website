@@ -14,29 +14,32 @@
             <div class="logo">
                 <img src="./assets/LOGO.svg" alt="logo">
             </div>
-            <div class="adress">
-                г. Гомель, Беларусь
-            </div>
-            <div class="work-schedule">
-                <div class="working-days">
-                    <img src="./assets/time.svg" alt="time">
-                    Пн-Пт. с 10:00 до 19:00
+            <div class="wrapper">
+                <div class="adress">
+                    г. Гомель, Беларусь
                 </div>
-                <div class="days-off">
-                    Выходные: сб, вс
+                <div class="work-schedule">
+                    <div class="working-days">
+                        <img src="./assets/time.svg" alt="time">
+                        Пн-Пт. с 10:00 до 19:00
+                    </div>
+                    <div class="days-off">
+                        Выходные: сб, вс
+                    </div>
+                </div>
+                <div class="social-networks">
+                    <img src="./assets/Social network instagram.svg" alt="Social network instagram">
+                    <img src="./assets/Social network vk.svg" alt="Social network vk">
+                    <img src="./assets/Social network viber.svg" alt="Social network viber">
+                </div>
+                <div class="phone-order">
+                    <div class="number">+375 (29) 180-11-22</div>
+                    <div class="order">
+                        Заказать звонок
+                    </div>
                 </div>
             </div>
-            <div class="social-networks">
-                <img src="./assets/Social network instagram.svg" alt="Social network instagram">
-                <img src="./assets/Social network vk.svg" alt="Social network vk">
-                <img src="./assets/Social network viber.svg" alt="Social network viber">
-            </div>
-            <div class="phone-order">
-                <div class="number">+375 (29) 180-11-22</div>
-                <div class="order">
-                    Заказать звонок
-                </div>
-            </div>
+            
         </header>
         <main>
             <div class="key-content">
@@ -236,7 +239,7 @@
             Пройдите тест за 30 секунд
             и узнайте стомость вашего товара
         </div>
-        <form id="regForm" action="">
+        <form id="regForm" action="https://formspree.io/f/mnqoywqp" method="POST">
             <div class="steps">
                 <div class="wrap">
                     <div class="step">
@@ -298,11 +301,11 @@
                         <div class="tab-form">
                             <div class="radio-joiner">
                                 <div class="radio-wrap">
-                                    <input type="radio" id="technique-choice-1" name="contact" value="full-set">
+                                    <input type="radio" id="technique-choice-1" oninput="this.className = '' "name="complect" value="full-set">
                                     <label for="technique-choice-1">полный комплект</label>
                                 </div>
                                 <div class="radio-wrap">
-                                    <input type="radio" id="technique-choice-2" name="contact" value="incomplete set">
+                                    <input type="radio" id="technique-choice-2" name="complect" oninput="this.className = '' " value="incomplete set">
                                     <label for="technique-choice-2">неполный комплект</label>
                                 </div>
                             </div>
@@ -310,7 +313,7 @@
                                 Из чего состоит ваш комплект
                             </p>
                             <p><input type="text" placeholder="Например: «‎В мой комплект входит ...»‎"
-                                    oninput="this.className = ''"></p>
+                                    oninput="this.className = ''" name="product-quality-description"></p>
                         </div>
 
                     </div>
@@ -325,15 +328,16 @@
                             <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
                             <input type="text" id="textInput" class="currency" value="50.00" />
 
-                            <input type="range" name="rangeInput" min="0" max="100" list="steplist"
+                            <input type="range" name="money count" min="0" max="5000" list="steplist"
                                 onchange="updateTextInput(this.value);" oninit="updateTextInput(this.value);" value="50"
-                                style="height: 0;">
+                                style="height: 0;" oninput="this.className = ''">
                             <datalist id="steplist">
                                 <option>0</option>
-                                <option>25</option>
-                                <option>50</option>
-                                <option>75</option>
-                                <option>100</option>
+                                <option>500</option>
+                                <option>750</option>
+                                <option>1000</option>
+                                <option>3000</option>
+                                <option>5000</option>
                             </datalist>
 
 
@@ -348,11 +352,11 @@
                         <p>
                             Ваше имя
                         </p>
-                        <p><input placeholder="Иван Иванов" oninput="this.className = ''"></p>
+                        <p><input placeholder="Иван Иванов" oninput="this.className = ''" name="customer-full-name"></p>
                         <p>
                             Ваш телефон
                         </p>
-                        <p><input placeholder="+375 (**) ***-**-**" oninput="this.className = ''"></p>
+                        <p><input placeholder="+375 (**) ***-**-**" oninput="this.className = ''" name="customer-phone"></p>
                     </div>
 
                 </div>
