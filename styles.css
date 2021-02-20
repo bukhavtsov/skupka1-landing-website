@@ -1062,7 +1062,7 @@ footer .bottom .adress-list .adress-item p {
     }
 
     .second-screen .product-list .product-item {
-        width: 130px;
+        width: 120px;
         height: 120px;
         margin-left: 5px;
         margin-top: 5px;
@@ -1234,6 +1234,36 @@ footer .bottom .adress-list .adress-item p {
 
     footer .bottom .adress-list .adress-item {
         margin-right: 0px;
+    }
+        
+    .second-screen .product-list .product-item {
+        margin-left: 0px;
+        margin-top: 0px;
+
+        width: 100px;
+        height: 100px
+    }
+    
+
+    .second-screen .product-list .product-item .product-item-wrap .product-name {
+        font-size: 8px;
+        max-width: 90px;
+    }
+
+    header .adress {
+        display: none;
+    }
+
+    header .work-schedule  {
+        display: none;
+    }
+
+    header .social-networks{
+        display: none;
+    }
+
+    header .phone-order{
+        display: none;
     }
 
 }
