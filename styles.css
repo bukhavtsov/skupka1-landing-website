@@ -1267,4 +1267,7 @@ footer .bottom .adress-list .adress-item p {
         display: none;
     }
 
+    .map .question-form input {
+        width: 280px;
+    }
 }
