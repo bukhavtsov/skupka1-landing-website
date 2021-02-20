@@ -674,6 +674,9 @@ input[type="range"] {
 
 .map .yandex-map {
     z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .map .question-form {
