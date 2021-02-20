@@ -612,7 +612,7 @@ input[type="range"] {
     justify-content: center;
     align-content: center;
     flex-direction: column;
-    width: 206px;
+    max-width: 206px;
     text-align: center;
 }
 
@@ -621,7 +621,7 @@ input[type="range"] {
 }
 
 .fifth-screen .content .pross-item img {
-    width: 130px;
+    max-width: 130px;
     height: 130px;
 
     margin-left: auto;
@@ -938,9 +938,6 @@ footer .bottom .adress-list .adress-item p {
         object-fit: cover;
         object-position: 0 100%; /* try 20px 10px */ 
     }
-
-    .second-screen .product-list {
-    }
     .second-screen .product-list .product-item {
         width: 163px;
         height: 222px;           
@@ -1006,7 +1003,17 @@ footer .bottom .adress-list .adress-item p {
     .third-screen #regForm .steps .wrap .step .description {
         display: none;
     }
+
+    .fourth-screen .about-shop .section-1 {
+        text-align: center;
+    }
     
+}
+
+@media screen and (max-width: 1200px) {
+    .fifth-screen .content .pross-list img{
+        width: 88px;
+    }
 }
 
 @media screen and (max-width: 783px) {
@@ -1042,6 +1049,7 @@ footer .bottom .adress-list .adress-item p {
         display: flex;
         flex-wrap: wrap;
     }
+
 }
 
 
@@ -1079,12 +1087,31 @@ footer .bottom .adress-list .adress-item p {
         width: 150px;
     }
 
+    .fourth-screen .about-shop .section-1 h1 {
+        font-size: 28px;
+    }
+
+    .fourth-screen .about-shop .section-1 p {
+        font-size: 14px;
+    }
+
+    .fourth-screen .about-shop .section-2 .experience-list {
+        margin-top: 10px;
+        gap: 10px
+    }
+
     .fourth-screen .about-shop .section-2 .experience-list .exp-item {
-        width: 300px;
-        height: 200px;
+        width: 270px;
+        height: 180px;
+    }
+
+    .fourth-screen .about-shop .section-2 .experience-list .exp-item img{
+        width: 50px;
+        height: 50px;
     }
 
     .fourth-screen .about-shop .section-2 .experience-list .exp-item h3 {
+        font-size: 14px;
         margin-block-start: 0px;
         margin-block-end: 0px;
         margin-inline-start: 0px;
@@ -1094,6 +1121,35 @@ footer .bottom .adress-list .adress-item p {
     .fourth-screen .about-shop .section-2 .experience-list .exp-item p {
         margin-block-start: 0px;
         margin-block-end: 0px;
+    }
+
+    .fifth-screen .content h1{
+        padding-bottom: 0px;
+    }
+    
+    .fifth-screen .content .separator {
+        display: none;
+        
+    }
+    .fifth-screen .content .pross-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .fifth-screen .content .pross-list img{
+        width: 88px;
+    }
+    .fifth-screen .content .pross-list .pross-item p{
+        margin-block-start: 0px;
+    }
+
+    .fifth-screen .content .pross-list .pross-item h3{
+        margin-block-start: 0px;
+        margin-block-end: 0px;
+    }
+
+    .fifth-screen .content button {
+        margin-top: 0px;
     }
     
 }
