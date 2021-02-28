@@ -988,6 +988,7 @@ footer .bottom .adress-list .adress-item p {
     
     main .key-phrase {
         margin-left: 50px;
+        padding-top: 150px
     }       
     .second-screen .product-list {
         margin-left: 0px;
@@ -1143,7 +1144,7 @@ footer .bottom .adress-list .adress-item p {
         object-fit: cover;
         object-position: 0 100%; 
     } 
-}
+
 
 
 @media screen and (max-width: 1200px) {
