@@ -21,7 +21,7 @@
                 <div class="adress">
                     г. Гомель, Беларусь
                     <div class="dropdown">
-                        <button class="dropbtn">8 адресов <img src="./assets/arrow-icon.svg" alt="адреса"></button>
+                        <button class="dropbtn">адреса магазинов<img src="./assets/arrow-icon.svg" alt="адреса"></button>
                         <div class="dropdown-content">
                             <div class="adress-item">
                                 <img src="./assets/map-location-icon.svg" alt="map location">
@@ -77,6 +77,13 @@
                                 <div class="main">
                                     <h6>ул. Ильича, 331</h6>
                                     <p>р-он "Белица", вход здание завода</p>
+                                </div>
+                            </div>
+                            <div class="adress-item">
+                                <img src="./assets/map-location-icon.svg" alt="map location">
+                                <div class="main">
+                                    <h6>ул. Богдана Хмельницкого, 80</h6>
+                                    <p>5 мкрн (Быховское кольцо)(вход с задней стороны пиццерии Dodopizza) </p>
                                 </div>
                             </div>
                         </div>
@@ -404,7 +411,8 @@
                             </p>
 
                             <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-                            <input type="text" id="textInput" class="currency" value="50.00" />
+                            <input type="text" id="textInput" class="currency" value="50.00"
+                                name="money count from text" oninput="this.className = ''" />
 
                             <input type="range" name="money count" min="0" max="5000" list="steplist"
                                 onchange="updateTextInput(this.value);" oninit="updateTextInput(this.value);" value="50"
@@ -570,7 +578,7 @@
                     <label for="phone">Ваш телефон</label>
                     <input type="text" name="phone" id="phone" placeholder="+375 (**) ***-**-**">
                 </div>
-                <button type="submit" value="Send" class="yellow-btn">Перезвоните мне</button>
+                <button type="submit" value="Send" class="yellow-btn">Перезвоните нам</button>
             </form>
         </div>
         <div class="yandex-map">
@@ -665,6 +673,13 @@
                         <div class="main">
                             <h6>ул. Ильича, 331</h6>
                             <p>р-он "Белица", вход здание завода</p>
+                        </div>
+                    </div>
+                    <div class="adress-item">
+                        <img src="./assets/map-location-icon.svg" alt="map location">
+                        <div class="main">
+                            <h6>ул. Богдана Хмельницкого, 80</h6>
+                            <p>5 мкрн (Быховское кольцо)(вход с задней стороны пиццерии Dodopizza) </p>
                         </div>
                     </div>
                 </div>

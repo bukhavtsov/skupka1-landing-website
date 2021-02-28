@@ -1039,6 +1039,10 @@ footer .bottom .adress-list .adress-item p {
     header .phone-order{
         margin-right: 0px;
     }
+    
+    main .key-content {
+        justify-content: center;
+    }
 
     main .key-phrase .bold-part {
         font-size: 28px;
@@ -1048,12 +1052,6 @@ footer .bottom .adress-list .adress-item p {
         font-size: 14px;
     }
     
-    .first-screen .key-content .img-part-2 {
-        width: 403px; /* width of container */
-        height: 338px; /* height of container */
-        object-fit: cover;
-        object-position: 0 100%; /* try 20px 10px */ 
-    }
     .second-screen .product-list .product-item {
         width: 163px;
         height: 222px;           
@@ -1133,6 +1131,20 @@ footer .bottom .adress-list .adress-item p {
     }
     
 }
+
+@media screen and (max-width: 1242px) {
+    main .key-content {
+        justify-content: center;
+    }
+
+     .first-screen .key-content .img-part-2 {
+        width: 403px; 
+        height: 338px;
+        object-fit: cover;
+        object-position: 0 100%; 
+    } 
+}
+
 
 @media screen and (max-width: 1200px) {
     .fifth-screen .content .pross-list img{
